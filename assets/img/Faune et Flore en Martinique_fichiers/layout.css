@@ -1,0 +1,133 @@
+body{
+  scroll-behavior: smooth;
+}
+
+.wrapper{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.grid{
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(6, 100vw);
+  grid-template-rows: repeat(6, 100vh);
+  width: calc(6 *  100vw);
+  height: calc(5 * 100vh);
+  transition: transform .7s ease-in-out;
+}
+
+.proxy-anchor{
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#abc:target ~ .grid{
+  transform: translate3d(calc(-1 * 100vw), 0, 0);
+}
+
+#p1:target ~ .grid{
+  transform: translate3d(calc(-2 * 100vw), 0, 0);
+}
+
+#p2:target ~ .grid{
+  transform: translate3d(calc(-3 * 100vw), 0, 0);
+}
+
+#p3:target ~ .grid{
+  transform: translate3d(calc(-4 * 100vw), 0, 0);
+}
+
+#p4:target ~ .grid{
+  transform: translate3d(calc(-5 * 100vw), 0, 0);
+}
+
+#p5:target ~ .grid{
+  transform: translate3d(calc(-5 * var(--box-width)), 0, 0);
+}
+
+#p6:target ~ .grid{
+  transform: translate3d(0, calc(-1 * var(--box-height)), 0);
+}
+
+#p7:target ~ .grid{
+  transform: translate3d(calc(-1 * var(--box-width)), calc(-1 * var(--box-height)), 0);
+}
+
+#p8:target ~ .grid{
+  transform: translate3d(calc(-2 * var(--box-width)), calc(-1 * var(--box-height)), 0);
+}
+
+#p9:target ~ .grid{
+  transform: translate3d(calc(-3 * var(--box-width)), calc(-1 * var(--box-height)), 0);
+}
+
+#p10:target ~ .grid{
+  transform: translate3d(calc(-4 * var(--box-width)), calc(-1 * var(--box-height)), 0);
+}
+
+#p11:target ~ .grid{
+  transform: translate3d(calc(-5 * var(--box-width)), calc(-1 * var(--box-height)), 0);
+}
+
+#p12:target ~ .grid{
+  transform: translate3d(0, calc(-2 * var(--box-height)), 0);
+}
+
+#p13:target ~ .grid{
+  transform: translate3d(calc(-1 * var(--box-width)), calc(-2 * var(--box-height)), 0);
+}
+
+#p14:target ~ .grid{
+  transform: translate3d(calc(-2 * var(--box-width)), calc(-2 * var(--box-height)), 0);
+}
+
+#p15:target ~ .grid{
+  transform: translate3d(calc(-3 * var(--box-width)), calc(-2 * var(--box-height)), 0);
+}
+
+#p16:target ~ .grid{
+  transform: translate3d(calc(-4 * var(--box-width)), calc(-2 * var(--box-height)), 0);
+}
+
+#p17:target ~ .grid{
+  transform: translate3d(calc(-5 * var(--box-width)), calc(-2 * var(--box-height)), 0);
+}
+
+#p18:target ~ .grid{
+  transform: translate3d(0, calc(-3 * var(--box-height)), 0);
+}
+
+#p19:target ~ .grid{
+  transform: translate3d(calc(-1 * var(--box-width)), calc(-3 * var(--box-height)), 0);
+}
+
+#p20:target ~ .grid{
+  transform: translate3d(calc(-2 * var(--box-width)), calc(-3 * var(--box-height)), 0);
+}
+
+#p21:target ~ .grid{
+  transform: translate3d(calc(-3 * var(--box-width)), calc(-3 * var(--box-height)), 0);
+}
+
+#p22:target ~ .grid{
+  transform: translate3d(calc(-4 * var(--box-width)), calc(-3 * var(--box-height)), 0);
+}
+
+#p23:target ~ .grid{
+  transform: translate3d(calc(-5 * var(--box-width)), calc(-3 * var(--box-height)), 0);
+}
+
+#p24:target ~ .grid{
+  transform: translate3d(0, calc(-4 * var(--box-height)), 0);
+}
+
+#p25:target ~ .grid{
+  transform: translate3d(calc(-1 * var(--box-width)), calc(-4 * var(--box-height)), 0);
+}
+
+#p26:target ~ .grid{
+  transform: translate3d(calc(-2 * var(--box-width)), calc(-4 * var(--box-height)), 0);
+}

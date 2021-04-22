@@ -1,0 +1,67 @@
+#with-postit{
+  position: relative;
+}
+
+#postit div{
+  background-color: darkkhaki;
+  display: inline-block;
+  padding: 20px;
+  position: absolute;
+}
+
+article{
+  position: relative;
+}
+
+.postit{
+  z-index: 3;
+  position: absolute;
+}
+
+.postit .close{
+  width: 15px;
+  height: 15px;
+  border: 2px solid #FFA10A;
+  border-radius: 50%;
+}
+
+.postit .right{
+  display: block;
+  position: relative;
+  left:15px;
+  width: 200px;
+  padding: 20px;
+  background-color: cornsilk;
+}
+
+.postit .left{
+  display: block;
+  position: relative;
+  left: -200px;
+  width: 200px;
+  padding: 20px;
+  background-color: cornsilk;
+}
+
+.open{
+  display: block;
+}
+
+.postit-target{
+  position:absolute;
+  border-radius: 50%;
+  border: solid 2px red;
+  width: 20px;
+  height: 20px;
+}
+
+#postit div:nth-child(1){
+  left: 50%;
+  top: 50%;
+  background-color: cadetblue;
+}
+
+#postit div:nth-child(2){
+  right: 10%;
+  bottom: 10%;
+}
